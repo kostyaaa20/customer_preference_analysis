@@ -20,3 +20,5 @@
    ```bash
    git clone https://github.com/kostyaaa20/customer_preference_analysis.git
    cd customer_preference_analysis
+2. Установите зависимости
+      pip install -r requirements.txt
