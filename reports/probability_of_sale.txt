@@ -1,0 +1,25 @@
+Отчёт классификации:
+               precision    recall  f1-score   support
+
+       False       0.96      0.99      0.97     18680
+        True       0.54      0.29      0.38      1103
+
+    accuracy                           0.95     19783
+   macro avg       0.75      0.64      0.68     19783
+weighted avg       0.94      0.95      0.94     19783
+
+ROC AUC Score: 0.8405588175911131
+
+Важность признаков:
+                 Feature  Importance
+9    daysSinceLastLogin    0.359679
+10    seniorityAsMonths    0.156113
+6        productsWished    0.138114
+2   socialProductsLiked    0.131753
+0     socialNbFollowers    0.098683
+1       socialNbFollows    0.042203
+8             hasAnyApp    0.020127
+7                gender    0.017126
+4          productsSold    0.016852
+3        productsListed    0.014268
+5      productsPassRate    0.005082

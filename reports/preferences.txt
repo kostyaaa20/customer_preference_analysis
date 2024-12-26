@@ -1,0 +1,77 @@
+C:\Users\Gavri\Desktop\Костя\project\DBA\.venv\Scripts\python.exe C:\Users\Gavri\Desktop\Костя\project\DBA\preferences.py 
+Информация о наборе данных:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 98913 entries, 0 to 98912
+Data columns (total 24 columns):
+ #   Column               Non-Null Count  Dtype  
+---  ------               --------------  -----  
+ 0   identifierHash       98913 non-null  int64  
+ 1   type                 98913 non-null  object 
+ 2   country              98913 non-null  object 
+ 3   language             98913 non-null  object 
+ 4   socialNbFollowers    98913 non-null  int64  
+ 5   socialNbFollows      98913 non-null  int64  
+ 6   socialProductsLiked  98913 non-null  int64  
+ 7   productsListed       98913 non-null  int64  
+ 8   productsSold         98913 non-null  int64  
+ 9   productsPassRate     98913 non-null  float64
+ 10  productsWished       98913 non-null  int64  
+ 11  productsBought       98913 non-null  int64  
+ 12  gender               98913 non-null  object 
+ 13  civilityGenderId     98913 non-null  int64  
+ 14  civilityTitle        98913 non-null  object 
+ 15  hasAnyApp            98913 non-null  bool   
+ 16  hasAndroidApp        98913 non-null  bool   
+ 17  hasIosApp            98913 non-null  bool   
+ 18  hasProfilePicture    98913 non-null  bool   
+ 19  daysSinceLastLogin   98913 non-null  int64  
+ 20  seniority            98913 non-null  int64  
+ 21  seniorityAsMonths    98913 non-null  float64
+ 22  seniorityAsYears     98913 non-null  float64
+ 23  countryCode          98913 non-null  object 
+dtypes: bool(4), float64(3), int64(11), object(6)
+memory usage: 15.5+ MB
+
+Первые строки набора данных:
+        identifierHash  type  ... seniorityAsYears countryCode
+0 -7279641312655250028  user  ...              8.9          us
+1 -1456013578740053406  user  ...              8.9          de
+2  9006282053848196165  user  ...              8.9          se
+3 -7154634866120535654  user  ...              8.9          tr
+4  2858299215060733023  user  ...              8.9          fr
+
+[5 rows x 24 columns]
+
+Пропущенные значения:
+socialNbFollowers      0
+socialNbFollows        0
+socialProductsLiked    0
+productsListed         0
+productsSold           0
+productsPassRate       0
+productsWished         0
+productsBought         0
+gender                 0
+hasAnyApp              0
+hasAndroidApp          0
+hasIosApp              0
+daysSinceLastLogin     0
+seniorityAsMonths      0
+dtype: int64
+
+Описательная статистика:
+       socialNbFollowers  ...  seniorityAsMonths
+count       98913.000000  ...       98913.000000
+mean            3.432269  ...         102.125583
+std             3.882383  ...           5.609735
+min             3.000000  ...          95.070000
+25%             3.000000  ...          95.230000
+50%             3.000000  ...         106.530000
+75%             3.000000  ...         106.700000
+max           744.000000  ...         106.830000
+
+[8 rows x 11 columns]
+
+Результаты T-теста:
+Статистика: 14.072514671106617, P-значение: 6.193390085801823e-45
+Существуют статистически значимые различия между группами.
